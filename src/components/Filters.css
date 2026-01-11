@@ -1,0 +1,73 @@
+.filters {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem;
+  background: #0b0b0f;
+  border-radius: 14px;
+  max-width: 1100px;
+  margin: 0 auto 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,.4);
+}
+
+.filter-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+/* Labels */
+.filters label {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #a1a1aa;
+}
+
+/* Range */
+.filters input[type="range"] {
+  appearance: none;
+  height: 5px;
+  border-radius: 999px;
+  outline: none;
+  cursor: pointer;
+}
+
+.filters input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #6366f1;
+  cursor: pointer;
+  box-shadow: 0 0 0 4px rgba(99,102,241,.3);
+}
+
+.filters span {
+  align-self: flex-end;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #57fb37e7;
+}
+
+/* SELECT */
+.filters select {
+  appearance: none;
+  padding: 0.65rem 0.75rem;
+  border-radius: 12px;
+  border: 1px solid #27272a;
+  background-color: #111;
+  color: #f4f4f5;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.filters select:hover {
+  border-color: #3f3f46;
+}
+
+.filters select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99,102,241,.35);
+}
